@@ -1,0 +1,87 @@
+.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--primaryBackground);
+}
+
+.register-container {
+  background-color: var(--secondaryBackground);
+  color: var(--text);
+  padding: 2rem 1.5rem; /* Adjusted horizontal padding */
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px var(--shadow);
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+}
+
+.register-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background-color: var(--primaryBackground);
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.register-form input::placeholder {
+  color: var(--neutral);
+}
+
+.register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--primary);
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+  align-self: center; /* ensures alignment */
+}
+
+.register-form button:hover {
+  background-color: var(--primaryHover);
+}
+
+.error-message {
+  color: var(--error);
+  text-align: center;
+}
+
+.login-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.login-link a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 0.25rem;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

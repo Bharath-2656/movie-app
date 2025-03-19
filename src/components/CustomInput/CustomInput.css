@@ -1,0 +1,48 @@
+.custom-input {
+  margin-bottom: 16px;
+}
+
+.custom-input label {
+  display: inline-block;
+  width: 30%;
+  margin-right: 10px;
+  font-weight: bold;
+  vertical-align: middle;
+  color: var(--text-color);
+}
+
+.custom-input input,
+.custom-input textarea {
+  display: block;
+  font-size: medium;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: var(--primary-background);
+  color: var(--text-color);
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.custom-input input:focus,
+.custom-input textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+.custom-input input.invalid,
+.custom-input textarea.invalid {
+  border-color: red !important;
+}
+
+.error-message {
+  width: 60%;
+  margin: 0 auto;
+  color: red;
+  font-size: small;
+}
